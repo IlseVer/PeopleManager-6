@@ -1,18 +1,12 @@
 ﻿@model Person
 
+@{
+	ViewBag.Title = "Edit Person";
+}
+
+<h1>@ViewBag.Title</h1>
 <form method="post">
-	<div class="mb-3">
-		<label asp-for="FirstName" class="form-label"></label> @* Maak label van firstname *@
-		<input asp-for="FirstName" class="form-control"> @* maak input van firstname *@
-	</div>
-	<div class="mb-3">
-		<label asp-for="LastName" class="form-label"></label>
-		<input asp-for="LastName" class="form-control"> 
-	</div>
-	<div class="mb-3">
-		<label asp-for="Email" class="form-label"></label>
-		<input asp-for="Email" class="form-control">
-	</div>
+	<partial name="CreateEditPartial" model="Model" /> <!-- Hier wordt de partial view aangeroepen , Person doorgeven -->
 	<a asp-action="Index" class="btn btn-secondary">Back</a>
-	<button type="submit" class="btn btn-primary">Create</button>
+	<button type="submit" class="btn btn-primary">Edit</button>
 </form>

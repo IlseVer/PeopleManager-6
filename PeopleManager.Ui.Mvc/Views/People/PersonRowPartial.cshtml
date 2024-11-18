@@ -5,4 +5,5 @@
     <td>@Model.LastName</td>
     <td>@Model.Email</td>
     <td><a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a></td> @* welke persoon aageven met id, asp-id *@
+    <td><a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a></td>
 </tr>

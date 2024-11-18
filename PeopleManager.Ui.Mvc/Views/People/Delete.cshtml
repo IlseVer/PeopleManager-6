@@ -1,0 +1,15 @@
+﻿@model Person
+
+@{
+	ViewBag.Title = "Delete Person";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<p>Are you sure you want to delete @Model.FirstName @Model.LastName (@Model.Email)?</p> <!-- Email uniek -->
+
+
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
+	<a asp-action="Index" class="btn btn-secondary">No</a>	<!--Reden om dit ook in de form te plaatsen in puur voor de layout	-->
+	<button type="submit" class="btn btn-danger">Yes</button>
+</form>
