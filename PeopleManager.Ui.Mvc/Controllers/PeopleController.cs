@@ -86,13 +86,16 @@ namespace PeopleManager.Ui.Mvc.Controllers
 		[HttpPost]
         [ValidateAntiForgeryToken]
 		public IActionResult DeleteConfirmed([FromRoute] int id)
-		{
-			var dbPerson = _peopleManagerDbContext.People.FirstOrDefault(p => p.Id == id); //als hij de persoon niet vindt, dan is het null
-			if (dbPerson is null)  
-			{
-				return RedirectToAction("Index");
-			}
-			_peopleManagerDbContext.People.Remove(dbPerson); //markeren als je mag die verwijderen
+        {
+            var person = new Person
+            {
+                Id = id,
+                FirstName = string.Empty,
+                LastName = string.Empty,
+            };
+
+            _peopleManagerDbContext.People.Attach(person); 
+            _peopleManagerDbContext.People.Remove(person); //markeren als je mag die verwijderen
 			_peopleManagerDbContext.SaveChanges();  //het effectief verwijderen
 
 			return RedirectToAction("Index"); 
