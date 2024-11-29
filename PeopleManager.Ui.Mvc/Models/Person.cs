@@ -1,5 +1,8 @@
-﻿namespace PeopleManager.Ui.Mvc.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PeopleManager.Ui.Mvc.Models
 {
+    [Table(nameof(Person))]
     public class Person
     {
         public int Id { get; set; }

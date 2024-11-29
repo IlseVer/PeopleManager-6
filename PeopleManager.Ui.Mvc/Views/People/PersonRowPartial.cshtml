@@ -5,5 +5,17 @@
     <td>@Model.LastName</td>
     <td>@Model.Email</td>
     <td><a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a></td> @* welke persoon aageven met id, asp-id *@
-    <td><a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a></td>
+    <td><a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+    
+	    <button type="button"
+		    data-id="@Model.Id"
+		    data-first-name="@Model.FirstName"
+		    data-last-name="@Model.LastName"
+		    data-email="@Model.Email"
+		    data-mode="delete"
+		    data-bs-toggle="modal"
+		    data-bs-target="#deleteModal"
+			class="btn btn-danger">Delete with modal
+	    </button>
+    </td>
 </tr>

@@ -84,9 +84,9 @@ namespace PeopleManager.Ui.Mvc.Controllers
         }
 
 		[HttpPost]
-        [Route("People/delete/{id:int}")] //dit is de route die je moet volgen id:int --> dubbele validate- het moet een getal zijn
+        [Route("People/delete/{id:int?}")] //dit is de route die je moet volgen id:int --> dubbele validate- het moet een getal zijn
         [ValidateAntiForgeryToken]
-		public IActionResult DeleteConfirmed([FromRoute] int id)
+		public IActionResult DeleteConfirmed(int id)
         {
             var person = new Person
             {
