@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PeopleManager.Ui.Mvc.Core;
-using PeopleManager.Ui.Mvc.Models;
+using PeopleManager.Model;
 
 namespace PeopleManager.Ui.Mvc.Controllers;
 

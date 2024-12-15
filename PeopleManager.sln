@@ -5,6 +5,18 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManager.Ui.Mvc", "PeopleManager.Ui.Mvc\PeopleManager.Ui.Mvc.csproj", "{5CAAEBD1-CA69-46AB-A856-A714FAB78327}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManager.Services", "PeopleManager.Services\PeopleManager.Services.csproj", "{12ACD646-8F9D-4157-8537-005AA0E6E227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManager.Repository", "PeopleManager.Repository\PeopleManager.Repository.csproj", "{645B19F9-FB89-430E-AEAC-81495AB8750E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManager.Model", "PeopleManager.Model\PeopleManager.Model.csproj", "{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{3180C387-0A2A-42D2-9A13-AA94C20B0F61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9D719441-4B24-472D-8402-F17F41ECDD6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C2B7D915-6C46-442B-9416-5E7F4BD7182C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +27,27 @@ Global
 		{5CAAEBD1-CA69-46AB-A856-A714FAB78327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CAAEBD1-CA69-46AB-A856-A714FAB78327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CAAEBD1-CA69-46AB-A856-A714FAB78327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12ACD646-8F9D-4157-8537-005AA0E6E227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12ACD646-8F9D-4157-8537-005AA0E6E227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12ACD646-8F9D-4157-8537-005AA0E6E227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12ACD646-8F9D-4157-8537-005AA0E6E227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645B19F9-FB89-430E-AEAC-81495AB8750E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645B19F9-FB89-430E-AEAC-81495AB8750E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645B19F9-FB89-430E-AEAC-81495AB8750E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645B19F9-FB89-430E-AEAC-81495AB8750E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CAAEBD1-CA69-46AB-A856-A714FAB78327} = {9D719441-4B24-472D-8402-F17F41ECDD6A}
+		{12ACD646-8F9D-4157-8537-005AA0E6E227} = {3180C387-0A2A-42D2-9A13-AA94C20B0F61}
+		{645B19F9-FB89-430E-AEAC-81495AB8750E} = {C2B7D915-6C46-442B-9416-5E7F4BD7182C}
+		{2120E85E-B9D9-43E0-A92C-C6F4D3BBE120} = {C2B7D915-6C46-442B-9416-5E7F4BD7182C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {846B7B7F-F6EB-4734-A91D-62BD44342E84}

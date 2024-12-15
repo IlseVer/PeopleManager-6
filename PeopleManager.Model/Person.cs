@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PeopleManager.Ui.Mvc.Models
+namespace PeopleManager.Model
 {
     [Table(nameof(Person))]
     public class Person
